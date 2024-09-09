@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <title>O Segredo da Montanha Esquecida</title>
+</head>
+
+<body>
+    <main>
+        <!-- Passo 0 -->
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.png" alt="Cabana na floresta com um diário misterioso">
+            <p>
+                Em uma antiga cabana na floresta, você encontra um diário misterioso descrevendo uma montanha esquecida cheia de segredos e enigmas. Determinado a descobrir o que está escondido ali, você decide seguir as pistas deixadas pelo autor do diário.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Seguir para a floresta densa.</button>
+            <button class="btn-proximo" data-proximo="2">Investigar as ruínas abandonadas próximas.</button>
+        </div>
+
+        <!-- Passo 1 -->
+        <div class="passo" id="passo-1">
+            <img src="cenario-passo1.png" alt="Floresta densa com trilhas e obstáculos naturais">
+            <p>
+                Você se aventura na floresta densa e enfrenta uma série de desafios, como rios caudalosos e trilhas cheias de armadilhas naturais. Ao chegar em uma clareira, você encontra uma árvore com marcas antigas.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Escalar a árvore para ter uma visão melhor.</button>
+            <button class="btn-proximo" data-proximo="4">Seguir o rastro de pegadas próximas.</button>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo2.png" alt="Ruínas antigas com um mapa escondido">
+            <p>
+                Nas ruínas, você descobre um velho mapa de papel escondido em um compartimento secreto. O mapa mostra dois locais possíveis para a entrada da montanha.
+            </p>
+            <button class="btn-proximo" data-proximo="5">Seguir o caminho para o vale ao norte.</button>
+            <button class="btn-proximo" data-proximo="6">Descer o desfiladeiro ao sul.</button>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="passo" id="passo-3">
+            <img src="cenario-passo3.png" alt="Visão da cachoeira a partir do topo da árvore">
+            <p>
+                No topo da árvore, você avista uma cachoeira distante com um brilho metálico misterioso.
+            </p>
+            <button class="btn-proximo" data-proximo="7">Ir para a cachoeira.</button>
+            <button class="btn-proximo" data-proximo="8">Voltar e seguir o rastro de pegadas.</button>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="passo" id="passo-4">
+            <img src="cenario-passo4.png" alt="Entrada da caverna escondida na vegetação">
+            <p>
+                Você segue as pegadas até uma caverna escondida na vegetação. Lá, encontra um diário antigo com instruções adicionais.
+            </p>
+            <button class="btn-proximo" data-proximo="9">Seguir as instruções do diário.</button>
+            <button class="btn-proximo" data-proximo="10">Queimar o diário.</button>
+        </div>
+
+        <!-- Passo 5 -->
+        <div class="passo" id="passo-5">
+            <img src="cenario-passo5.png" alt="Vila esquecida pelo tempo">
+            <p>
+                Você chega a uma vila esquecida pelo tempo. Os habitantes falam sobre uma maldição que protege a montanha.
+            </p>
+            <button class="btn-proximo" data-proximo="11">Investigar a maldição.</button>
+            <button class="btn-proximo" data-proximo="12">Ignorar os avisos e seguir em frente.</button>
+        </div>
+
+        <!-- Passo 6 -->
+        <div class="passo" id="passo-6">
+            <img src="cenario-passo6.png" alt="Desfiladeiro com uma ponte de corda balançando">
+            <p>
+                Você desce o desfiladeiro e encontra uma ponte de corda balançando ao vento.
+            </p>
+            <button class="btn-proximo" data-proximo="13">Atravessar a ponte.</button>
+            <button class="btn-proximo" data-proximo="14">Procurar uma rota alternativa.</button>
+        </div>
+
+        <!-- Passo 7 -->
+        <div class="passo" id="passo-7">
+            <img src="cenario-passo7.png" alt="Cachoeira com uma caixa de metal enferrujada">
+            <p>
+                Na cachoeira, você encontra uma caixa de metal enferrujada com uma chave e um mapa antigo.
+            </p>
+            <button class="btn-proximo" data-proximo="final-segredo">Seguir o mapa.</button>
+            <button class="btn-proximo" data-proximo="final-aventura">Voltar para as ruínas.</button>
+        </div>
+
+        <!-- Passo 8 -->
+        <div class="passo" id="passo-8">
+            <img src="cenario-passo8.png" alt="Portal brilhante escondido na cabana">
+            <p>
+                Você volta e decide seguir o rastro de pegadas até encontrar um portal brilhante escondido na cabana.
+            </p>
+            <button class="btn-proximo" data-proximo="final-segredo">Entrar pelo portal.</button>
+            <button class="btn-proximo" data-proximo="8">Esperar e observar.</button>
+        </div>
+
+        <!-- Passo 9 -->
+        <div class="passo" id="passo-9">
+            <img src="cenario-passo9.png" alt="Salão subterrâneo com um enigma gravado na parede">
+            <p>
+                As instruções do diário levam você a um salão subterrâneo com um enigma gravado na parede.
+            </p>
+            <button class="btn-proximo" data-proximo="final-amaldicoado">Resolver o enigma.</button>
+            <button class="btn-proximo" data-proximo="final-aventura">Ignorar o enigma e seguir o túnel.</button>
+        </div>
+
+        <!-- Passo 10 -->
+        <div class="passo" id="passo-10">
+            <img src="cenario-passo10.png" alt="Passagem secreta revelada debaixo da cabana">
+            <p>
+                Ao queimar o diário, uma passagem secreta se revela debaixo da cabana.
+            </p>
+            <button class="btn-proximo" data-proximo="final-segredo">Descer pela passagem.</button>
+            <button class="btn-proximo" data-proximo="final-amaldicoado">Ignorar a passagem e voltar.</button>
+        </div>
+
+        <!-- Passo 11 -->
+        <div class="passo" id="passo-11">
+            <img src="cenario-passo11.png" alt="Habitantes da vila falando sobre o espírito guardião da montanha">
+            <p>
+                Os habitantes falam sobre o espírito guardião da montanha. Apenas alguém de coração puro pode passar por suas defesas.
+            </p>
+            <button class="btn-proximo" data-proximo="final-segredo">Convencer um habitante a acompanhá-lo.</button>
+            <button class="btn-proximo" data-proximo="12">Seguir sozinho com o amuleto dado.</button>
+        </div>
+
+        <!-- Passo 12 -->
+        <div class="passo" id="passo-12">
+            <img src="cenario-passo12.png" alt="Tempestade repentina na montanha">
+            <p>
+                Você decide ignorar os avisos e seguir seu caminho. Uma tempestade repentina ameaça sua jornada.
+            </p>
+            <button class="btn-proximo" data-proximo="final-seguro">Encontrar abrigo.</button>
+            <button class="btn-proximo" data-proximo="final-segredo">Continuar na tempestade.</button>
+        </div>
+
+        <!-- Passo 13 -->
+        <div class="passo" id="passo
