@@ -1,1 +1,64 @@
+/* Estilo global para o corpo da página */
+body {
+    background-color: #747474;
+    color: whitesmoke;
+    font-family: "Kanit", "sans-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta a altura para a altura total da janela do navegador */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo dos botões de escolha */
+button {
+    background-color: rgb(59, 230, 59);
+    color: whitesmoke;
+    font-family: "Kanit", "sans-serif";
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao mudar a cor */
+}
+
+button:hover {
+    background-color: rgb(50, 200, 50); /* Cor de fundo ao passar o mouse */
+}
+
+/* Esconde os passos que não estão ativos */
+.passo {
+    display: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar o conteúdo */
+    background-color: #333; /* Fundo mais escuro para contrastar com o texto */
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Mostra o passo ativo */
+.passo.ativo {
+    display: block;
+}
+
+/* Estilo do contêiner principal */
+main {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding no cálculo da largura total */
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona cantos arredondados às imagens */
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra às imagens */
+}
 
