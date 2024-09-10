@@ -18,8 +18,8 @@ function avancarParaProximoPasso(button) {
 
 // Função para verificar se o jogador chegou a um desfecho
 function verificarDesfecho(button) {
-    const desfechoId = button.getAttribute('data-proximo');
-    const desfecho = document.getElementById(`desfecho-${desfechoId}`);
+    const desfechoId = 'desfecho-' + button.getAttribute('data-proximo');
+    const desfecho = document.getElementById(desfechoId);
 
     if (desfecho) {
         const atual = document.querySelector('.ativo');
